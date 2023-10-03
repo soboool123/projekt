@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="jquery.js"></script>
+    <title>Piłka nożna</title>
+</head>
+<script>
+    'use strict';
+
+    $(document).ready(function () {
+        //hovery na odnosniki
+
+        $(".media").mouseover(function () {
+            $(this).css("color", "gray");
+            $(this).css("transition", "0.5s");
+        })
+        $(".media").mouseout(function () {
+            $(this).css("color", "white");
+            $(this).css("transition", "0.5s");
+        })
+        $("#f").mouseover(function () {
+            $(this).css("color", "blue");
+        })
+        $("#i").mouseover(function () {
+            $(this).css("color", "orange");
+        })
+        $("#t").mouseover(function () {
+            $(this).css("color", "black");
+        })
+        $("#y").mouseover(function () {
+            $(this).css("color", "red");
+        })
+        $("#historia").mouseover(function () {
+            $(this).css("box-shadow", " 8px 8px 24px 0px black");
+            $(this).css("transition", "0.5s");
+
+        })
+        $("#historia").mouseout(function () {
+            $(this).css("box-shadow", "");
+        })
+
+        $("#premier").mouseover(function () {
+            $(this).css("box-shadow", " 8px 8px 24px 0px black");
+            $(this).css("transition", "0.5s");
+
+        })
+        $("#premier").mouseout(function () {
+            $(this).css("box-shadow", "");
+        })
+        $("#szwarga").mouseover(function () {
+            $(this).css("box-shadow", " 8px 8px 24px 0px black");
+            $(this).css("transition", "0.5s");
+
+        })
+        $("#szwarga").mouseout(function () {
+            $(this).css("box-shadow", "");
+        })
+        $("#cham").mouseover(function () {
+            $(this).css("box-shadow", " 8px 8px 24px 0px black");
+            $(this).css("transition", "0.5s");
+
+        })
+        $("#cham").mouseout(function () {
+            $(this).css("box-shadow", "");
+        })
+        //rozwijanie
+        $("#hppn").click(function () {
+            $(".art1").slideToggle("slow");
+            $(".as1").slideToggle("slow");
+        })
+        $("#pl").click(function () {
+            $(".art2").slideToggle("slow");
+            $(".as2").slideToggle("slow");
+
+        })
+        $("#rakow").click(function () {
+            $(".art3").slideToggle("slow");
+            $(".as3").slideToggle("slow");
+
+        })
+        $("#cl").click(function () {
+            $(".art4").slideToggle("slow");
+            $(".as4").slideToggle("slow");
+
+        })
+    });
+</script>
+
+<body>
+    <header>
+        <img src="pilka3.png" height="90px" />
+
+    </header>
+    <nav>
+        <a href="index.html">
+            <p class="media">STRONA GŁÓWNA</p>
+        </a>
+        <a href="index.html">
+            <p class="media">AKTUALNOŚCI</p>
+        </a>
+        <a href="index.html">
+            <p class="media">KONTAKT</p>
+        </a>
+    </nav>
+    <main>
+        <section class="tytul">
+            <h1>
+                <center>GAZETA</center>
+            </h1>
+        </section>
+        <h2 id="hppn">HISTORIA POWSTANIA PIŁKI NOŻNEJ</h2>
+
+        <article class="art1">
+
+            <p class="tekst1">Piłka nożna w formie zbliżonej do tej, jaką znamy powstała w XIX wieku. Pierwsze jej
+                reguły
+                zaczęto spisywać w Wielkiej Brytanii, która po dziś dzień uważana jest za kolebkę tego sportu. Pierwsze
+                oficjalne zasady futbolu zostały spisane w 1848 roku w Cambridge, a ponownie spisano je w Sheffield 24
+                października 1857. Dokładnie w tym roku powstał Sheffield Football Club uważany najstarszy klub
+                piłkarski na świecie. Rok 1863 możemy uznać za początek współczesnego futbolu. W 1888 roku w Anglii
+                startują pierwsze na świecie zawodowe rozgrywki piłki nożnej. W następnych latach w szybkim tempie
+                dyscyplina ta rozprzestrzenia się na cały świat. W roku 1900 piłka nożna zostaje dołączona do programu
+                igrzysk olimpijskich, co dodatkowo dodaje jej prestiżu. Cztery lata później, w 1904 roku powstaje
+                Międzynarodowa Federacja Piłki Nożnej, czyli FIFA.</p>
+        </article>
+        <aside class="as1"><img src="historia.png" alt="historia" id="historia"></aside>
+        <h2 id="pl">NAJSILNIEJSZ LIGA SWIATA - PREMIER LEAGUE</h2>
+        <article class="art2">
+
+            <p class="tekst2">Liga angielska wskazywana jest przez kibiców na całym świecie jako jedna z najbardziej
+                emocjonujących, stojących na najwyższym poziomie sportowym i wyrównanych lig. Rozgrywki Premier League
+                transmitowane są na całym świecie – w tym w Polsce – i w trakcie sezonu przed ekrany przyciągają miliony
+                widzów. Jest to najwyższy poziom angielskich mistrzostw w piłkę nożną. W rozgrywkach
+                biorą udział najlepsze piłkarskie zespoły z Anglii oraz Walii – obecnie jest ich już łącznie 20.
+                Zwycięzca Premier League zostaje jednocześnie mistrzem Anglii. Rozgrywki prowadzone są cyklicznie, na
+                przełomie dwóch lat – sezon rozpoczyna się w sierpniu, a kończy w maju następnego roku.
+                <br>Klubem, który
+                może poszczycić się największą liczbą zdobytych tytułów mistrza Anglii, jest Manchester United. Od 1992
+                r. zdobył ich aż 13, a w całej historii 20, Drugi w klasyfikacji wszechczasów Liverpool F.C. ma na swoim
+                koncie 19 tytułów, jednak tylko 1 z nich zdobył po 1992 r. (w sezonie 2019/20).
+            </p>
+        </article>
+        <aside class="as2"><img src="pl.png" alt="premier" id="premier"></aside>
+        <h2 id="rakow">RAKÓW CZĘSTOCHOWA: DAWID SZWARGA ODBYŁ ROZMOWĘ Z SONNYM KITTELEM</h2>
+        <article class="art3">
+            <p class="tekst3">Letni transfer Sonny'ego Kittela do Rakowa Częstochowa wzbudził bardzo duże oczekiwania.
+                Wielu ekspertów i kibiców widziało w ofensywnym pomocniku, który przez lata notował solidne liczby w
+                barwach HSV, materiał na gwiazdę całej Ekstraklasy. Niemiec oczywiście dalej może nią zostać, ale na
+                razie gra niewiele.
+                Piłkarz zachwycił golem w meczu z Karabachem w eliminacjach Ligi Mistrzów, zdobył też bramkę w starciu z
+                Puszczą Niepołomice w lidze, lecz łącznie spędził na murawie tylko 323 minuty.
+                Kilka dni temu „Bild” zasugerował, że zawodnik jest sfrustrowany pozycją w zespole.
+                Łukasz Olkowicz poinformował w programie „Misja Futbol”, że mimo iż w artykule „Bilda” nie było
+                wypowiedzi 30-latka, wzbudził on zaniepokojenie w Rakowie i Dawid Szwarga zaprosił podopiecznego na
+                rozmowę.
+                Zdaniem dziennikarza ważną kwestią w całej sprawie może być zerwanie przez gracza współpracy z
+                dotychczasową agencją menedżerską.
+                - Kittel był pytany w klubie, o co chodzi, bo w tym tekście nie było jego wypowiedzi. Powiedział, że ten
+                tekst mógł być inspirowany przez byłą już agencję menadżerską, bo pojawiły się kwoty, jakie zarabia w
+                Rakowie, a to raczej nie jest w jego interesie, żeby takie informacje przedostawały się do szatni. Ma
+                prawo być zły, bo nie gra. Dziś nie dzieje się jeszcze chyba nic bardzo złego, żeby bić na alarm, że
+                Kittel rozsadza szatnię od środka. Jest już po rozmowie z trenerem Szwargą – przekazał Olkowicz.
+            </p>
+        </article>
+        <aside class="as3"><img src="szwarga.png" alt="szwarga" id="szwarga"></aside>
+        <h2 id="cl">POZNALIŚMY WYNIKI 1 KOLEJKI CHAMPIONS LEAGUE</h2>
+        <article class="art4">
+            <p class="mecze">
+                YOUNG BOYS BERNO – <b>RB LIPSK</b> 1:3
+                AC MILAN – NEWCASTLE 0:0<BR>
+                <b>MANCHESTER CITY</b> – CRVENA ZVEZDA BELGRAD 3:1<BR>
+                <b>FC BARCELONA</b> – ROYAL ANTWERP 5:0<BR>
+                SZACHTAR DONIECK – <b>FC PORTO 1:3</b><BR>
+                LAZIO RZYM – ATLETICO MADRYT 1:1<BR>
+                <b>FEYENOORD ROTTERDAM</b> – CELTIC GLASGOW 2:0<BR>
+                <b>PARIS SAINT-GERMAIN</b> – BORUSSIA DORTMUND 2:0<BR>
+                GALATASARAY STAMBUŁ – FC KOPENHAGA 2:2<BR>
+                <b>REAL MADRYT</b> – UNION BERLIN 1:0<BR>
+                <b>BAYERN MONACHIUM</b> – MANCHESTER UNITED 4:3<BR>
+                BRAGA – <b>SSC NAPOLI 1:2</b><BR>
+                <b>ARSENAL</b> – PSV EINDHOVEN 4:0<BR>
+                SEVILLA FC – RC LENS 1:1<BR>
+                BENFICA LIZBONA – <b>RED BULL SALZBURG 0:2</b><BR>
+                REAL SOCIEDAD – INTER MEDIOLAN 1:1<BR>
+
+            </p>
+
+        </article>
+        <aside class="as4"><img src="champions.png" alt="cl" id="cham"></aside>
+
+
+
+    </main>
+    <footer>
+
+        <a href="https://www.facebook.com" target="_blank" class="media" id="f">FACEBOOK</a>
+        <a href="https://www.instagram.com" target="_blank" class="media" id="i">INSTAGRAM</a>
+        <a href="https://www.x.com" target="_blank" class="media" id="t">TWITTER</a>
+        <a href="https://www.youtube.com" target="_blank" class="media" id="y">YOUTUBE</a>
+        <p></p>
+        <p class="autor">AUTOR: BARTOSZ SOBOLEWSKI</p>
+    </footer>
+</body>
+
+</html>
